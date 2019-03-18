@@ -1,5 +1,3 @@
-//database name:phpcms//
-// sql
 -- phpMyAdmin SQL Dump
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
@@ -162,6 +160,33 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- phpMyAdmin SQL Dump
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Mar 18, 2019 at 09:25 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `phpcms`
+--
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `comments`
 --
 
@@ -171,7 +196,6 @@ CREATE TABLE `comments` (
   `name` varchar(200) NOT NULL,
   `email` varchar(200) NOT NULL,
   `comment` varchar(500) NOT NULL,
-  `approvedby` varchar(200) NOT NULL,
   `status` varchar(5) NOT NULL,
   `admin_panel_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
